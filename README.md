@@ -1,11 +1,14 @@
 # Sennovate-Task
 
-Download the project and open it in spring tool suit
-Build the project by right click on the project , run as  maven install , you will get jar file or you can run as springboot web. 
+
+
+Download the project(Productrestapi)  and open it in spring tool suit.
+Build the project by right click on the project , run as  maven install , you will get jar file (java -jar <jarfilename>) or you can run as springboot web. 
 you will get a password copy that password and  username is user  (enabled security)
 Open the browser and use the below links to see the swagger ui.
 
-create the database table using the below:
+create the database table before running the code by using the below:
+change your password for database in application properties file.
 use mydb;
 
 create table product(
