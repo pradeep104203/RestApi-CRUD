@@ -1,8 +1,8 @@
 # Sennovate-Task
 
 Download the project and open it in spring tool suit
-Build the project by riught click on the project , run as  maven install .  
-you will get a password copy that password 
+Build the project by riught click on the project , run as  maven install , you will get jar file or you can run as springboot web. 
+you will get a password copy that password || username :user 
 Open the browser and usebthe below links to see the swagger ui.
 
 create the database table using the below:
