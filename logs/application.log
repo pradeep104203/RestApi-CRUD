@@ -1,0 +1,1107 @@
+2021-02-01 17:31:49.473  INFO 5109 --- [main] c.p.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5109 (started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:31:49.484  INFO 5109 --- [main] c.p.s.ProductrestapiApplicationTests     : No active profile set, falling back to default profiles: default
+2021-02-01 17:31:50.434  INFO 5109 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:31:50.487  INFO 5109 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:31:51.016  INFO 5109 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:31:51.031  INFO 5109 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 17:31:51.046  INFO 5109 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 17:31:51.046  INFO 5109 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:31:51.233  INFO 5109 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:31:51.434  INFO 5109 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:31:51.439  WARN 5109 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:31:51.661  INFO 5109 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:31:51.663  INFO 5109 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:31:51.668  INFO 5109 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 17:31:54.418  INFO 5109 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - bc30f714-fe30-4584-833b-a7a0e9701131 this
+]
+
+2021-02-01 17:31:54.435  INFO 5109 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 17:31:54.680  INFO 5109 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:31:55.303  INFO 5109 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:31:55.378  INFO 5109 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:31:55.465  INFO 5109 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:31:55.681  INFO 5109 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:31:55.938  INFO 5109 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:31:56.607  INFO 5109 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:31:56.617  INFO 5109 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:31:57.106  WARN 5109 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:31:57.409  INFO 5109 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:31:58.069  INFO 5109 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 04bd9c61-e237-4399-be74-b05f45fbd886
+
+2021-02-01 17:31:58.293  INFO 5109 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52a2e2fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@15a41088, org.springframework.security.web.header.HeaderWriterFilter@247a8411, org.springframework.security.web.csrf.CsrfFilter@1af78e37, org.springframework.security.web.authentication.logout.LogoutFilter@4acdf6e7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b901f7b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7804a783, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7c0035dd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@36e358de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53335328, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@140cfc5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5089a72b, org.springframework.security.web.session.SessionManagementFilter@820b78a, org.springframework.security.web.access.ExceptionTranslationFilter@28dd8786, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@135a8808]
+2021-02-01 17:31:58.410  INFO 5109 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:31:58.471  INFO 5109 --- [main] c.p.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 9.494 seconds (JVM running for 10.693)
+2021-02-01 17:31:58.762  INFO 5109 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:31:58.766  INFO 5109 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:31:58.769  INFO 5109 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 17:31:58.786  INFO 5109 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 17:32:32.207  INFO 5124 --- [main] c.p.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5124 (started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:32:32.210  INFO 5124 --- [main] c.p.s.ProductrestapiApplicationTests     : No active profile set, falling back to default profiles: default
+2021-02-01 17:32:33.028  INFO 5124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:32:33.075  INFO 5124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:32:33.559  INFO 5124 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:32:33.574  INFO 5124 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 17:32:33.589  INFO 5124 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 17:32:33.589  INFO 5124 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:32:33.760  INFO 5124 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:32:33.956  INFO 5124 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:32:33.960  WARN 5124 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:32:34.172  INFO 5124 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:32:34.174  INFO 5124 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:32:34.179  INFO 5124 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 17:32:36.681  INFO 5124 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 103031f3-58e6-415e-94bc-c071e45e1b0b this
+]
+
+2021-02-01 17:32:36.698  INFO 5124 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 17:32:36.897  INFO 5124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:32:37.308  INFO 5124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:32:37.367  INFO 5124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:32:37.418  INFO 5124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:32:37.594  INFO 5124 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:32:37.839  INFO 5124 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:32:38.262  INFO 5124 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:32:38.269  INFO 5124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:32:38.706  WARN 5124 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:32:38.983  INFO 5124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:32:39.579  INFO 5124 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8884e683-f310-4566-90c3-10d7c2118670
+
+2021-02-01 17:32:39.772  INFO 5124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69a3944, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cd6d147, org.springframework.security.web.header.HeaderWriterFilter@3c04ddda, org.springframework.security.web.csrf.CsrfFilter@6af29394, org.springframework.security.web.authentication.logout.LogoutFilter@3d1c8f35, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a7b5925, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@39451d92, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4987142d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b8599c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ec06e97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@797ee1a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e3bf77b, org.springframework.security.web.session.SessionManagementFilter@7ac1161f, org.springframework.security.web.access.ExceptionTranslationFilter@15d2ea6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e0a112f]
+2021-02-01 17:32:39.884  INFO 5124 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:32:39.939  INFO 5124 --- [main] c.p.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 7.95 seconds (JVM running for 8.828)
+2021-02-01 17:32:40.118  INFO 5124 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Running shutdown hook... Current state: ACTIVE
+2021-02-01 17:32:40.127  INFO 5124 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:32:40.131  INFO 5124 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:32:40.135  INFO 5124 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 17:32:40.152  INFO 5124 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 17:34:38.275  INFO 5174 --- [main] c.p.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5174 (started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:34:38.278  INFO 5174 --- [main] c.p.s.ProductrestapiApplicationTests     : No active profile set, falling back to default profiles: default
+2021-02-01 17:34:39.040  INFO 5174 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:34:39.083  INFO 5174 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:34:39.570  INFO 5174 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:34:39.586  INFO 5174 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 17:34:39.600  INFO 5174 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 17:34:39.600  INFO 5174 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:34:39.779  INFO 5174 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:34:39.975  INFO 5174 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:34:39.980  WARN 5174 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:34:40.195  INFO 5174 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:34:40.196  INFO 5174 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:34:40.201  INFO 5174 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 17:34:43.596  INFO 5174 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 527b06d1-ca22-40ea-b5e3-06a25e5bcb98 this
+]
+
+2021-02-01 17:34:43.607  INFO 5174 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 17:34:43.842  INFO 5174 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:34:44.250  INFO 5174 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:34:44.308  INFO 5174 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:34:44.355  INFO 5174 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:34:44.531  INFO 5174 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:34:44.782  INFO 5174 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:34:45.259  INFO 5174 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:34:45.266  INFO 5174 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:34:45.772  WARN 5174 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:34:46.056  INFO 5174 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:34:46.709  INFO 5174 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4f501c88-dd7a-4aa7-a4a2-00f713027c86
+
+2021-02-01 17:34:46.910  INFO 5174 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4987142d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ec06e97, org.springframework.security.web.header.HeaderWriterFilter@7ac1161f, org.springframework.security.web.csrf.CsrfFilter@528c4353, org.springframework.security.web.authentication.logout.LogoutFilter@39451d92, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a5b394, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1fdd5517, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3e3bf77b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@31e9d94f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@591febcb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@585672dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41e76252, org.springframework.security.web.session.SessionManagementFilter@552b15f6, org.springframework.security.web.access.ExceptionTranslationFilter@3c04ddda, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@abe7d36]
+2021-02-01 17:34:47.027  INFO 5174 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:34:47.086  INFO 5174 --- [main] c.p.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 9.227 seconds (JVM running for 10.177)
+2021-02-01 17:34:47.261  INFO 5174 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Running shutdown hook... Current state: ACTIVE
+2021-02-01 17:34:47.266  INFO 5174 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:34:47.270  INFO 5174 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:34:47.273  INFO 5174 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 17:34:47.288  INFO 5174 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 17:35:13.008  INFO 5178 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5178 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:35:13.010  INFO 5178 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 17:35:13.728  INFO 5178 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:35:13.764  INFO 5178 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:35:14.182  INFO 5178 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 17:35:14.191  INFO 5178 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 17:35:14.191  INFO 5178 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 17:35:14.266  INFO 5178 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 17:35:14.266  INFO 5178 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1214 ms
+2021-02-01 17:35:14.467  INFO 5178 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:35:14.521  INFO 5178 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 17:35:14.534  INFO 5178 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 17:35:14.534  INFO 5178 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:35:14.650  INFO 5178 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:35:14.847  INFO 5178 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:35:14.852  WARN 5178 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:35:15.025  INFO 5178 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:35:15.027  INFO 5178 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:35:15.032  INFO 5178 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 17:35:18.014  INFO 5178 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - deddb4bf-a2a0-4a09-9082-671cfa839b8f this
+]
+
+2021-02-01 17:35:18.029  INFO 5178 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 17:35:18.136  INFO 5178 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:35:18.494  INFO 5178 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:35:18.535  INFO 5178 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:35:18.575  INFO 5178 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:35:18.716  INFO 5178 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:35:18.932  INFO 5178 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:35:19.351  INFO 5178 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:35:19.358  INFO 5178 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:35:19.580  WARN 5178 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:35:19.666  INFO 5178 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:35:19.985  INFO 5178 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 16783189-9568-439c-acc1-512346305f0c
+
+2021-02-01 17:35:20.088  INFO 5178 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f2542f, org.springframework.security.web.context.SecurityContextPersistenceFilter@15549dd7, org.springframework.security.web.header.HeaderWriterFilter@716eae1, org.springframework.security.web.csrf.CsrfFilter@498b697, org.springframework.security.web.authentication.logout.LogoutFilter@14b4ce6f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6956eb58, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18bf1bad, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3dad8bde, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@870a9f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25a2c4dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71098fb3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@301f9aa0, org.springframework.security.web.session.SessionManagementFilter@430f0c63, org.springframework.security.web.access.ExceptionTranslationFilter@64eb14da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@368d51ca]
+2021-02-01 17:35:20.143  INFO 5178 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:35:20.181  INFO 5178 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 17:35:20.191  INFO 5178 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.482 seconds (JVM running for 7.941)
+2021-02-01 17:35:22.719  INFO 5178 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 17:35:22.720  INFO 5178 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 17:35:22.721  INFO 5178 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-01 17:36:05.535  INFO 5184 --- [main] c.p.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5184 (started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:36:05.537  INFO 5184 --- [main] c.p.s.ProductrestapiApplicationTests     : No active profile set, falling back to default profiles: default
+2021-02-01 17:36:06.292  INFO 5184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:36:06.336  INFO 5184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:36:06.806  INFO 5184 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:36:06.822  INFO 5184 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5702, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5702], bind any local is true
+2021-02-01 17:36:06.837  INFO 5184 --- [main] com.hazelcast.system                     : [172.27.194.165]:5702 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5702
+2021-02-01 17:36:06.837  INFO 5184 --- [main] com.hazelcast.system                     : [172.27.194.165]:5702 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:36:07.027  INFO 5184 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5702 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:36:07.217  INFO 5184 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5702 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:36:07.221  WARN 5184 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5702 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:36:07.424  INFO 5184 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5702 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:36:07.426  INFO 5184 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5702 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:36:07.431  INFO 5184 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5702 [dev] [4.0.3] [172.27.194.165]:5702 is STARTING
+2021-02-01 17:36:07.651  INFO 5184 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [172.27.194.165]:5702 [dev] [4.0.3] Trying to join to discovered node: [172.27.194.165]:5701
+2021-02-01 17:36:07.665  INFO 5184 --- [hz.hazel-instance.cached.thread-3] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5702 [dev] [4.0.3] Connecting to /172.27.194.165:5701, timeout: 10000, bind-any: true
+2021-02-01 17:36:07.680  INFO 5178 --- [hz.hazel-instance.IO.thread-in-0] c.h.internal.nio.tcp.TcpIpConnection     : [172.27.194.165]:5701 [dev] [4.0.3] Initialized new cluster connection between /172.27.194.165:5701 and /172.27.194.165:59007
+2021-02-01 17:36:07.684  INFO 5184 --- [hz.hazel-instance.IO.thread-in-0] c.h.internal.nio.tcp.TcpIpConnection     : [172.27.194.165]:5702 [dev] [4.0.3] Initialized new cluster connection between /172.27.194.165:59007 and /172.27.194.165:5701
+2021-02-01 17:36:13.684  INFO 5178 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:2, ver:2} [
+	Member [172.27.194.165]:5701 - deddb4bf-a2a0-4a09-9082-671cfa839b8f this
+	Member [172.27.194.165]:5702 - 3b58d569-5eb5-41eb-8c20-b407fb27fb14
+]
+
+2021-02-01 17:36:13.695  INFO 5184 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5702 [dev] [4.0.3] 
+
+Members {size:2, ver:2} [
+	Member [172.27.194.165]:5701 - deddb4bf-a2a0-4a09-9082-671cfa839b8f
+	Member [172.27.194.165]:5702 - 3b58d569-5eb5-41eb-8c20-b407fb27fb14 this
+]
+
+2021-02-01 17:36:14.698  INFO 5184 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5702 [dev] [4.0.3] [172.27.194.165]:5702 is STARTED
+2021-02-01 17:36:14.896  INFO 5184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:36:15.319  INFO 5184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:36:15.390  INFO 5184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:36:15.440  INFO 5184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:36:15.603  INFO 5184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:36:15.815  INFO 5184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:36:16.254  INFO 5184 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:36:16.261  INFO 5184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:36:16.695  WARN 5184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:36:16.973  INFO 5184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:36:17.570  INFO 5184 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f8d989c3-78f7-4cd5-a9f9-ec4842ae752d
+
+2021-02-01 17:36:17.758  INFO 5184 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2526d5f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@51097500, org.springframework.security.web.header.HeaderWriterFilter@37d3e740, org.springframework.security.web.csrf.CsrfFilter@4603c412, org.springframework.security.web.authentication.logout.LogoutFilter@514f2020, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6af29394, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d2afc39, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6b529d42, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e4c05a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@662e5590, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66f5770e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@459df48d, org.springframework.security.web.session.SessionManagementFilter@c4ca86a, org.springframework.security.web.access.ExceptionTranslationFilter@6d7772d3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@463a1f47]
+2021-02-01 17:36:17.864  INFO 5184 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:36:17.920  INFO 5184 --- [main] c.p.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 12.607 seconds (JVM running for 13.427)
+2021-02-01 17:36:18.295  INFO 5184 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:36:18.299  INFO 5184 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:36:18.298  INFO 5178 --- [hz.hazel-instance.IO.thread-in-0] c.h.internal.nio.tcp.TcpIpConnection     : [172.27.194.165]:5701 [dev] [4.0.3] Connection[id=1, /172.27.194.165:5701->/172.27.194.165:59007, qualifier=null, endpoint=[172.27.194.165]:5702, alive=false, connectionType=MEMBER] closed. Reason: Connection closed by the other side
+2021-02-01 17:36:18.302  INFO 5184 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 17:36:18.305  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Connecting to /172.27.194.165:5702, timeout: 10000, bind-any: true
+2021-02-01 17:36:18.308  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Could not connect to: /172.27.194.165:5702. Reason: SocketException[Connection refused to address /172.27.194.165:5702]
+2021-02-01 17:36:18.317  INFO 5184 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 17:36:18.412  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Connecting to /172.27.194.165:5702, timeout: 10000, bind-any: true
+2021-02-01 17:36:18.413  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Could not connect to: /172.27.194.165:5702. Reason: SocketException[Connection refused to address /172.27.194.165:5702]
+2021-02-01 17:36:18.516  INFO 5178 --- [hz.hazel-instance.cached.thread-4] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Connecting to /172.27.194.165:5702, timeout: 10000, bind-any: true
+2021-02-01 17:36:18.517  INFO 5178 --- [hz.hazel-instance.cached.thread-4] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Could not connect to: /172.27.194.165:5702. Reason: SocketException[Connection refused to address /172.27.194.165:5702]
+2021-02-01 17:36:18.619  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Connecting to /172.27.194.165:5702, timeout: 10000, bind-any: true
+2021-02-01 17:36:18.620  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.internal.nio.tcp.TcpIpConnector      : [172.27.194.165]:5701 [dev] [4.0.3] Could not connect to: /172.27.194.165:5702. Reason: SocketException[Connection refused to address /172.27.194.165:5702]
+2021-02-01 17:36:18.620  WARN 5178 --- [hz.hazel-instance.cached.thread-5] c.h.i.n.tcp.TcpIpConnectionErrorHandler  : [172.27.194.165]:5701 [dev] [4.0.3] Removing connection to endpoint [172.27.194.165]:5702 Cause => java.net.SocketException {Connection refused to address /172.27.194.165:5702}, Error-Count: 5
+2021-02-01 17:36:18.621  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.i.cluster.impl.MembershipManager     : [172.27.194.165]:5701 [dev] [4.0.3] Removing Member [172.27.194.165]:5702 - 3b58d569-5eb5-41eb-8c20-b407fb27fb14
+2021-02-01 17:36:18.623  INFO 5178 --- [hz.hazel-instance.cached.thread-5] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:3} [
+	Member [172.27.194.165]:5701 - deddb4bf-a2a0-4a09-9082-671cfa839b8f this
+]
+
+2021-02-01 17:36:18.625  INFO 5178 --- [hz.hazel-instance.cached.thread-4] c.h.t.TransactionManagerService          : [172.27.194.165]:5701 [dev] [4.0.3] Committing/rolling-back live transactions of [172.27.194.165]:5702, UUID: 3b58d569-5eb5-41eb-8c20-b407fb27fb14
+2021-02-01 17:53:47.961  INFO 5178 --- [RMI TCP Connection(30)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 17:53:47.985  INFO 5178 --- [RMI TCP Connection(30)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:53:47.986  INFO 5178 --- [RMI TCP Connection(30)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:53:47.989  INFO 5178 --- [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 17:53:47.999  INFO 5178 --- [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 17:53:53.212  INFO 5414 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5414 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:53:53.214  INFO 5414 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 17:53:54.064  INFO 5414 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:53:54.099  INFO 5414 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:53:54.533  INFO 5414 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 17:53:54.542  INFO 5414 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 17:53:54.542  INFO 5414 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 17:53:54.615  INFO 5414 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 17:53:54.615  INFO 5414 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1363 ms
+2021-02-01 17:53:54.873  INFO 5414 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:53:54.888  INFO 5414 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 17:53:54.901  INFO 5414 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 17:53:54.901  INFO 5414 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:53:55.017  INFO 5414 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:53:55.206  INFO 5414 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:53:55.211  WARN 5414 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:53:55.379  INFO 5414 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:53:55.381  INFO 5414 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:53:55.386  INFO 5414 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 17:53:57.874  INFO 5414 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 6de111fd-7adb-4024-a8a8-47c4d806587a this
+]
+
+2021-02-01 17:53:57.889  INFO 5414 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 17:53:57.998  INFO 5414 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:53:58.366  INFO 5414 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:53:58.405  INFO 5414 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:53:58.446  INFO 5414 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:53:58.685  INFO 5414 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:53:58.779  INFO 5414 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:53:59.180  INFO 5414 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:53:59.186  INFO 5414 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:53:59.549  WARN 5414 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:53:59.736  INFO 5414 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:53:59.833  INFO 5414 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:54:00.025  INFO 5414 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9bd96fc3-7942-4291-bcd8-23e591e68b00
+
+2021-02-01 17:54:00.130  INFO 5414 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f7b1d6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@74ab8610, org.springframework.security.web.header.HeaderWriterFilter@518b0c12, org.springframework.security.web.csrf.CsrfFilter@736a8aea, org.springframework.security.web.authentication.logout.LogoutFilter@325236f5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@32b8992e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@73633230, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32d8e58d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6892d403, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@296949c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1728d307, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c941d19, org.springframework.security.web.session.SessionManagementFilter@40b958c5, org.springframework.security.web.access.ExceptionTranslationFilter@690e7b89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22a8c837]
+2021-02-01 17:54:00.210  INFO 5414 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 17:54:00.501  INFO 5414 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.602 seconds (JVM running for 8.264)
+2021-02-01 17:54:03.042  INFO 5414 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 17:54:03.043  INFO 5414 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 17:54:03.044  INFO 5414 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-01 17:57:04.015  INFO 5414 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 17:57:04.044  INFO 5414 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:57:04.047  INFO 5414 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:57:04.050  INFO 5414 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 17:57:04.060  INFO 5414 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 17:57:20.927  INFO 5462 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5462 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:57:20.929  INFO 5462 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 17:57:21.779  INFO 5462 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:57:21.816  INFO 5462 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:57:22.254  INFO 5462 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 17:57:22.262  INFO 5462 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 17:57:22.262  INFO 5462 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 17:57:22.335  INFO 5462 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 17:57:22.336  INFO 5462 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1369 ms
+2021-02-01 17:57:22.610  INFO 5462 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:57:22.625  INFO 5462 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 17:57:22.638  INFO 5462 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 17:57:22.639  INFO 5462 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:57:22.756  INFO 5462 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:57:22.951  INFO 5462 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:57:22.956  WARN 5462 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:57:23.128  INFO 5462 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:57:23.130  INFO 5462 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:57:23.135  INFO 5462 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 17:57:26.125  INFO 5462 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - c9a9f0ba-a0da-4ee9-9f29-7f32e36bef5b this
+]
+
+2021-02-01 17:57:26.138  INFO 5462 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 17:57:26.248  INFO 5462 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:57:26.600  INFO 5462 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:57:26.643  INFO 5462 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:57:26.686  INFO 5462 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:57:26.941  INFO 5462 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:57:27.042  INFO 5462 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:57:27.471  INFO 5462 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:57:27.479  INFO 5462 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:57:27.849  WARN 5462 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:57:28.034  INFO 5462 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:57:28.133  INFO 5462 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:57:28.317  INFO 5462 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8def8e34-d62f-4a1d-8e67-afbf5994322c
+
+2021-02-01 17:57:28.421  INFO 5462 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75f446df, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ca006ac, org.springframework.security.web.header.HeaderWriterFilter@4425b6ed, org.springframework.security.web.csrf.CsrfFilter@518b0c12, org.springframework.security.web.authentication.logout.LogoutFilter@6ac0fd1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@751b901a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ce8bf64, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3751baf6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@438a65a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1372696b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73633230, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27e656e6, org.springframework.security.web.session.SessionManagementFilter@5039c2cf, org.springframework.security.web.access.ExceptionTranslationFilter@1f27f354, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f7b1d6a]
+2021-02-01 17:57:28.504  INFO 5462 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 17:57:28.710  INFO 5462 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 17:57:28.710  INFO 5462 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 17:57:28.712  INFO 5462 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 17:57:28.794  INFO 5462 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 8.196 seconds (JVM running for 8.865)
+2021-02-01 17:59:03.681  INFO 5462 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 17:59:03.701  INFO 5462 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:59:03.704  INFO 5462 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:59:03.706  INFO 5462 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 17:59:03.714  INFO 5462 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 17:59:07.482  INFO 5486 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5486 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 17:59:07.484  INFO 5486 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 17:59:08.343  INFO 5486 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:59:08.380  INFO 5486 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-02-01 17:59:08.816  INFO 5486 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 17:59:08.824  INFO 5486 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 17:59:08.824  INFO 5486 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 17:59:08.900  INFO 5486 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 17:59:08.901  INFO 5486 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1380 ms
+2021-02-01 17:59:09.158  INFO 5486 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 17:59:09.173  INFO 5486 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 17:59:09.186  INFO 5486 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 17:59:09.186  INFO 5486 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 17:59:09.305  INFO 5486 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 17:59:09.500  INFO 5486 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 17:59:09.504  WARN 5486 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 17:59:09.676  INFO 5486 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 17:59:09.678  INFO 5486 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 17:59:09.682  INFO 5486 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 17:59:12.608  INFO 5486 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 411fd67d-d50f-4501-a30e-3c7d0c21ee74 this
+]
+
+2021-02-01 17:59:12.623  INFO 5486 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 17:59:12.731  INFO 5486 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 17:59:13.085  INFO 5486 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 17:59:13.127  INFO 5486 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 17:59:13.183  INFO 5486 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 17:59:13.415  INFO 5486 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 17:59:13.506  INFO 5486 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 17:59:13.933  INFO 5486 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 17:59:13.940  INFO 5486 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 17:59:14.309  WARN 5486 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 17:59:14.495  INFO 5486 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 17:59:14.592  INFO 5486 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 17:59:14.774  INFO 5486 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fd54ca96-4d7e-400e-9fdb-761da4a0ddc4
+
+2021-02-01 17:59:14.879  INFO 5486 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@543c887, org.springframework.security.web.context.SecurityContextPersistenceFilter@355b4c34, org.springframework.security.web.header.HeaderWriterFilter@6dc7b7f, org.springframework.security.web.csrf.CsrfFilter@17554316, org.springframework.security.web.authentication.logout.LogoutFilter@49482761, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18d09283, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@744199bb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@75f446df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e4b9592, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dc3eda6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32eb38e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3751baf6, org.springframework.security.web.session.SessionManagementFilter@702432cc, org.springframework.security.web.access.ExceptionTranslationFilter@7a79d99c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fb42ec7]
+2021-02-01 17:59:14.958  INFO 5486 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 17:59:15.244  INFO 5486 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 8.071 seconds (JVM running for 8.697)
+2021-02-01 17:59:17.089  INFO 5486 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 17:59:17.090  INFO 5486 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 17:59:17.091  INFO 5486 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-01 18:00:02.253  INFO 5486 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:00:02.280  INFO 5486 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:00:02.283  INFO 5486 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:00:02.286  INFO 5486 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:00:02.295  INFO 5486 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:01:37.889  INFO 5520 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5520 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:01:37.891  INFO 5520 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:01:38.754  INFO 5520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:01:38.789  INFO 5520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:01:39.228  INFO 5520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:01:39.236  INFO 5520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:01:39.236  INFO 5520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:01:39.312  INFO 5520 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:01:39.313  INFO 5520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1385 ms
+2021-02-01 18:01:39.572  INFO 5520 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:01:39.587  INFO 5520 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:01:39.601  INFO 5520 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:01:39.601  INFO 5520 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:01:39.728  INFO 5520 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:01:39.924  INFO 5520 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:01:39.928  WARN 5520 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:01:40.107  INFO 5520 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:01:40.109  INFO 5520 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:01:40.114  INFO 5520 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:01:42.799  INFO 5520 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 1ac3b849-1857-44bf-8a0d-0e190441ee5d this
+]
+
+2021-02-01 18:01:42.814  INFO 5520 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:01:42.928  INFO 5520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:01:43.294  INFO 5520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:01:43.337  INFO 5520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:01:43.377  INFO 5520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:01:43.645  INFO 5520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:01:43.742  INFO 5520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:01:44.161  INFO 5520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:01:44.168  INFO 5520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:01:44.542  WARN 5520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:01:44.728  INFO 5520 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:01:44.825  INFO 5520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:01:45.007  INFO 5520 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a8d0db67-e1d7-477a-9535-2a20b75725a3
+
+2021-02-01 18:01:45.110  INFO 5520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3751baf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@702432cc, org.springframework.security.web.csrf.CsrfFilter@5af1b221, org.springframework.security.web.authentication.logout.LogoutFilter@744199bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6672b0ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6413eeb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27e656e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@543c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca7bddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21539796, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cfab56d, org.springframework.security.web.session.SessionManagementFilter@355b4c34, org.springframework.security.web.access.ExceptionTranslationFilter@6dc7b7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+2021-02-01 18:01:45.188  INFO 5520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:01:45.481  INFO 5520 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.895 seconds (JVM running for 8.645)
+2021-02-01 18:01:47.609  INFO 5520 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:01:47.609  INFO 5520 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:01:47.611  INFO 5520 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:03:20.981  INFO 5520 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:03:21.005  INFO 5520 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:03:21.008  INFO 5520 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:03:21.010  INFO 5520 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:03:21.019  INFO 5520 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:03:24.390  INFO 5602 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5602 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:03:24.392  INFO 5602 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:03:25.216  INFO 5602 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:03:25.253  INFO 5602 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:03:25.691  INFO 5602 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:03:25.699  INFO 5602 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:03:25.699  INFO 5602 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:03:25.779  INFO 5602 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:03:25.780  INFO 5602 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1353 ms
+2021-02-01 18:03:26.053  INFO 5602 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:03:26.067  INFO 5602 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:03:26.080  INFO 5602 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:03:26.081  INFO 5602 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:03:26.204  INFO 5602 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:03:26.401  INFO 5602 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:03:26.406  WARN 5602 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:03:26.582  INFO 5602 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:03:26.584  INFO 5602 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:03:26.588  INFO 5602 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:03:29.269  INFO 5602 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 3c10d5f7-db60-44e0-971e-08e142b57667 this
+]
+
+2021-02-01 18:03:29.284  INFO 5602 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:03:29.386  INFO 5602 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:03:29.731  INFO 5602 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:03:29.774  INFO 5602 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:03:29.837  INFO 5602 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:03:30.104  INFO 5602 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:03:30.200  INFO 5602 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:03:30.615  INFO 5602 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:03:30.622  INFO 5602 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:03:30.988  WARN 5602 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:03:31.171  INFO 5602 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:03:31.267  INFO 5602 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:03:31.448  INFO 5602 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c398ebd4-0bd9-455a-896b-6882b03c96bf
+
+2021-02-01 18:03:31.555  INFO 5602 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fb42ec7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d49fe37, org.springframework.security.web.header.HeaderWriterFilter@17554316, org.springframework.security.web.csrf.CsrfFilter@3d2ff73a, org.springframework.security.web.authentication.logout.LogoutFilter@206e5183, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4779df3d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@32eb38e5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1f7b1d6a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1659d7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@231c521e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@115924ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32d8e58d, org.springframework.security.web.session.SessionManagementFilter@5af1b221, org.springframework.security.web.access.ExceptionTranslationFilter@749ffdc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@222a7429]
+2021-02-01 18:03:31.638  INFO 5602 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:03:31.929  INFO 5602 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.837 seconds (JVM running for 8.304)
+2021-02-01 18:03:33.269  INFO 5602 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:03:33.269  INFO 5602 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:03:33.271  INFO 5602 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:04:44.450  INFO 5602 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:04:44.473  INFO 5602 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:04:44.476  INFO 5602 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:04:44.478  INFO 5602 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:04:44.486  INFO 5602 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:05:53.202  INFO 5623 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5623 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:05:53.204  INFO 5623 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:05:54.079  INFO 5623 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:05:54.114  INFO 5623 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:05:54.555  INFO 5623 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:05:54.564  INFO 5623 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:05:54.564  INFO 5623 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:05:54.651  INFO 5623 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:05:54.651  INFO 5623 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1411 ms
+2021-02-01 18:05:54.911  INFO 5623 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:05:54.927  INFO 5623 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:05:54.940  INFO 5623 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:05:54.941  INFO 5623 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:05:55.057  INFO 5623 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:05:55.251  INFO 5623 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:05:55.254  WARN 5623 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:05:55.426  INFO 5623 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:05:55.428  INFO 5623 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:05:55.432  INFO 5623 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:05:58.236  INFO 5623 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 7837fdce-4b8a-48f1-9ab6-4f872896ec52 this
+]
+
+2021-02-01 18:05:58.252  INFO 5623 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:05:58.360  INFO 5623 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:05:58.704  INFO 5623 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:05:58.746  INFO 5623 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:05:58.788  INFO 5623 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:05:59.036  INFO 5623 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:05:59.127  INFO 5623 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:05:59.541  INFO 5623 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:05:59.548  INFO 5623 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:05:59.914  WARN 5623 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:06:00.098  INFO 5623 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:06:00.197  INFO 5623 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:06:00.374  INFO 5623 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b41f7abd-de8e-4e87-bb24-75a4a04769a6
+
+2021-02-01 18:06:00.476  INFO 5623 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fb42ec7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d49fe37, org.springframework.security.web.header.HeaderWriterFilter@17554316, org.springframework.security.web.csrf.CsrfFilter@3d2ff73a, org.springframework.security.web.authentication.logout.LogoutFilter@206e5183, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4779df3d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@32eb38e5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1f7b1d6a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1659d7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@231c521e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@115924ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32d8e58d, org.springframework.security.web.session.SessionManagementFilter@5af1b221, org.springframework.security.web.access.ExceptionTranslationFilter@749ffdc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@222a7429]
+2021-02-01 18:06:00.557  INFO 5623 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:06:00.781  INFO 5623 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:06:00.781  INFO 5623 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:06:00.783  INFO 5623 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:06:00.871  INFO 5623 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.969 seconds (JVM running for 8.59)
+2021-02-01 18:08:20.362  INFO 5623 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:08:20.384  INFO 5623 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:08:20.387  INFO 5623 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:08:20.388  INFO 5623 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:08:20.396  INFO 5623 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:09:52.034  INFO 5646 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5646 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:09:52.036  INFO 5646 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:09:52.875  INFO 5646 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:09:52.910  INFO 5646 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:09:53.340  INFO 5646 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:09:53.349  INFO 5646 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:09:53.349  INFO 5646 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:09:53.430  INFO 5646 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:09:53.430  INFO 5646 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1358 ms
+2021-02-01 18:09:53.681  INFO 5646 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:09:53.695  INFO 5646 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:09:53.707  INFO 5646 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:09:53.707  INFO 5646 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:09:53.824  INFO 5646 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:09:54.018  INFO 5646 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:09:54.022  WARN 5646 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:09:54.205  INFO 5646 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:09:54.207  INFO 5646 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:09:54.212  INFO 5646 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:09:56.871  INFO 5646 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - d109d3ee-aebb-45d4-8832-6bfd2e62680e this
+]
+
+2021-02-01 18:09:56.885  INFO 5646 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:09:56.995  INFO 5646 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:09:57.371  INFO 5646 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:09:57.413  INFO 5646 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:09:57.472  INFO 5646 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:09:57.706  INFO 5646 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:09:57.804  INFO 5646 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:09:58.228  INFO 5646 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:09:58.235  INFO 5646 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:09:58.604  WARN 5646 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:09:58.789  INFO 5646 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:09:58.888  INFO 5646 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:09:59.069  INFO 5646 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 95ffa72e-40f6-4dbe-b75b-bd0b911a6a68
+
+2021-02-01 18:09:59.169  INFO 5646 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75f446df, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ca006ac, org.springframework.security.web.header.HeaderWriterFilter@4425b6ed, org.springframework.security.web.csrf.CsrfFilter@518b0c12, org.springframework.security.web.authentication.logout.LogoutFilter@6ac0fd1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@751b901a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ce8bf64, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3751baf6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@438a65a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1372696b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73633230, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27e656e6, org.springframework.security.web.session.SessionManagementFilter@5039c2cf, org.springframework.security.web.access.ExceptionTranslationFilter@1f27f354, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f7b1d6a]
+2021-02-01 18:09:59.249  INFO 5646 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:09:59.538  INFO 5646 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.829 seconds (JVM running for 8.465)
+2021-02-01 18:10:01.542  INFO 5646 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:10:01.542  INFO 5646 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:10:01.544  INFO 5646 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:10:53.673  INFO 5646 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:10:53.696  INFO 5646 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:10:53.698  INFO 5646 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:10:53.700  INFO 5646 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:10:53.710  INFO 5646 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:11:09.152  INFO 5658 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5658 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:11:09.154  INFO 5658 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:11:09.987  INFO 5658 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:11:10.023  INFO 5658 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:11:10.452  INFO 5658 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:11:10.460  INFO 5658 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:11:10.461  INFO 5658 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:11:10.540  INFO 5658 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:11:10.540  INFO 5658 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
+2021-02-01 18:11:10.813  INFO 5658 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:11:10.828  INFO 5658 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:11:10.841  INFO 5658 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:11:10.842  INFO 5658 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:11:10.958  INFO 5658 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:11:11.158  INFO 5658 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:11:11.163  WARN 5658 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:11:11.344  INFO 5658 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:11:11.346  INFO 5658 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:11:11.350  INFO 5658 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:11:14.156  INFO 5658 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - c68a080c-a12f-4e2b-b169-9f840b14e12a this
+]
+
+2021-02-01 18:11:14.170  INFO 5658 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:11:14.274  INFO 5658 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:11:14.627  INFO 5658 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:11:14.669  INFO 5658 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:11:14.732  INFO 5658 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:11:14.970  INFO 5658 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:11:15.074  INFO 5658 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:11:15.477  INFO 5658 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:11:15.484  INFO 5658 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:11:15.851  WARN 5658 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:11:16.036  INFO 5658 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:11:16.133  INFO 5658 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:11:16.314  INFO 5658 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 852afcdd-8a47-42a8-b900-b6373255b463
+
+2021-02-01 18:11:16.423  INFO 5658 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3751baf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@702432cc, org.springframework.security.web.csrf.CsrfFilter@5af1b221, org.springframework.security.web.authentication.logout.LogoutFilter@744199bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6672b0ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6413eeb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27e656e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@543c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca7bddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21539796, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cfab56d, org.springframework.security.web.session.SessionManagementFilter@355b4c34, org.springframework.security.web.access.ExceptionTranslationFilter@6dc7b7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+2021-02-01 18:11:16.517  INFO 5658 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:11:16.829  INFO 5658 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.993 seconds (JVM running for 8.445)
+2021-02-01 18:11:16.888  INFO 5658 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:11:16.888  INFO 5658 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:11:16.890  INFO 5658 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-01 18:13:10.134  INFO 5658 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:13:10.158  INFO 5658 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:13:10.160  INFO 5658 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:13:10.163  INFO 5658 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:13:10.172  INFO 5658 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:13:14.359  INFO 5674 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5674 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:13:14.361  INFO 5674 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:13:15.206  INFO 5674 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:13:15.241  INFO 5674 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:13:15.679  INFO 5674 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:13:15.688  INFO 5674 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:13:15.688  INFO 5674 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:13:15.759  INFO 5674 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:13:15.759  INFO 5674 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1357 ms
+2021-02-01 18:13:16.016  INFO 5674 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:13:16.031  INFO 5674 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:13:16.047  INFO 5674 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:13:16.047  INFO 5674 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:13:16.176  INFO 5674 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:13:16.378  INFO 5674 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:13:16.383  WARN 5674 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:13:16.561  INFO 5674 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:13:16.565  INFO 5674 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:13:16.570  INFO 5674 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:13:19.009  INFO 5674 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - e4ef1e5e-010e-4433-8231-93635ff136ef this
+]
+
+2021-02-01 18:13:19.024  INFO 5674 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:13:19.132  INFO 5674 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:13:19.492  INFO 5674 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:13:19.533  INFO 5674 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:13:19.591  INFO 5674 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:13:19.819  INFO 5674 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:13:19.917  INFO 5674 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:13:20.330  INFO 5674 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:13:20.337  INFO 5674 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:13:20.704  WARN 5674 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:13:20.888  INFO 5674 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:13:20.986  INFO 5674 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:13:21.178  INFO 5674 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 616dce73-cafb-4212-9332-a16b2ddea84c
+
+2021-02-01 18:13:21.286  INFO 5674 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3751baf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@702432cc, org.springframework.security.web.csrf.CsrfFilter@5af1b221, org.springframework.security.web.authentication.logout.LogoutFilter@744199bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6672b0ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6413eeb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27e656e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@543c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca7bddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21539796, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cfab56d, org.springframework.security.web.session.SessionManagementFilter@355b4c34, org.springframework.security.web.access.ExceptionTranslationFilter@6dc7b7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+2021-02-01 18:13:21.361  INFO 5674 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:13:21.640  INFO 5674 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.595 seconds (JVM running for 8.31)
+2021-02-01 18:13:22.338  INFO 5674 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:13:22.338  INFO 5674 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:13:22.340  INFO 5674 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:14:14.457  INFO 5674 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:14:14.481  INFO 5674 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:14:14.484  INFO 5674 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:14:14.488  INFO 5674 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:14:14.501  INFO 5674 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:14:17.594  INFO 5683 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5683 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:14:17.597  INFO 5683 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:14:18.480  INFO 5683 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:14:18.515  INFO 5683 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:14:18.953  INFO 5683 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:14:18.961  INFO 5683 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:14:18.962  INFO 5683 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:14:19.043  INFO 5683 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:14:19.043  INFO 5683 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1397 ms
+2021-02-01 18:14:19.304  INFO 5683 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:14:19.321  INFO 5683 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:14:19.336  INFO 5683 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:14:19.336  INFO 5683 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:14:19.460  INFO 5683 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:14:19.652  INFO 5683 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:14:19.656  WARN 5683 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:14:19.840  INFO 5683 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:14:19.842  INFO 5683 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:14:19.846  INFO 5683 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:14:22.342  INFO 5683 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 23d977ad-040f-4245-a890-7741a690845b this
+]
+
+2021-02-01 18:14:22.356  INFO 5683 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:14:22.473  INFO 5683 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:14:22.836  INFO 5683 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:14:22.878  INFO 5683 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:14:22.915  INFO 5683 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:14:23.156  INFO 5683 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:14:23.247  INFO 5683 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:14:23.662  INFO 5683 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:14:23.669  INFO 5683 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:14:24.048  WARN 5683 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:14:24.233  INFO 5683 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:14:24.330  INFO 5683 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:14:24.518  INFO 5683 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d748ef75-8c74-4949-a87a-b6d1434c9df7
+
+2021-02-01 18:14:24.628  INFO 5683 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:14:24.628  INFO 5683 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:14:24.654  INFO 5683 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3751baf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@702432cc, org.springframework.security.web.csrf.CsrfFilter@5af1b221, org.springframework.security.web.authentication.logout.LogoutFilter@744199bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6672b0ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6413eeb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27e656e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@543c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca7bddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21539796, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cfab56d, org.springframework.security.web.session.SessionManagementFilter@355b4c34, org.springframework.security.web.access.ExceptionTranslationFilter@6dc7b7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+2021-02-01 18:14:24.660  INFO 5683 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2021-02-01 18:14:24.761  INFO 5683 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:14:24.992  INFO 5683 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.698 seconds (JVM running for 8.151)
+2021-02-01 18:16:00.684  INFO 5683 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:16:00.710  INFO 5683 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:16:00.713  INFO 5683 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:16:00.716  INFO 5683 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:16:00.725  INFO 5683 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:16:16.683  INFO 5691 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5691 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:16:16.687  INFO 5691 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:16:17.561  INFO 5691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:16:17.597  INFO 5691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:16:18.018  INFO 5691 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:16:18.026  INFO 5691 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:16:18.026  INFO 5691 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:16:18.120  INFO 5691 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:16:18.120  INFO 5691 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1400 ms
+2021-02-01 18:16:18.370  INFO 5691 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:16:18.385  INFO 5691 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:16:18.398  INFO 5691 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:16:18.399  INFO 5691 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:16:18.518  INFO 5691 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:16:18.714  INFO 5691 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:16:18.719  WARN 5691 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:16:18.892  INFO 5691 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:16:18.895  INFO 5691 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:16:18.899  INFO 5691 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:16:21.721  INFO 5691 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 4fb35cd4-c2c7-483e-9884-1eba6faf0c5c this
+]
+
+2021-02-01 18:16:21.736  INFO 5691 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:16:21.846  INFO 5691 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:16:22.182  INFO 5691 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:16:22.223  INFO 5691 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:16:22.263  INFO 5691 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:16:22.557  INFO 5691 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:16:22.651  INFO 5691 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:16:23.085  INFO 5691 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:16:23.091  INFO 5691 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:16:23.456  WARN 5691 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:16:23.640  INFO 5691 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:16:23.735  INFO 5691 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:16:23.916  INFO 5691 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a4b33841-738f-43a9-9258-2d63c8afa686
+
+2021-02-01 18:16:24.016  INFO 5691 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75f446df, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ca006ac, org.springframework.security.web.header.HeaderWriterFilter@4425b6ed, org.springframework.security.web.csrf.CsrfFilter@518b0c12, org.springframework.security.web.authentication.logout.LogoutFilter@6ac0fd1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@751b901a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ce8bf64, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3751baf6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@438a65a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1372696b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73633230, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27e656e6, org.springframework.security.web.session.SessionManagementFilter@5039c2cf, org.springframework.security.web.access.ExceptionTranslationFilter@1f27f354, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f7b1d6a]
+2021-02-01 18:16:24.094  INFO 5691 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:16:24.377  INFO 5691 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 8.016 seconds (JVM running for 8.624)
+2021-02-01 18:16:26.068  INFO 5691 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:16:26.069  INFO 5691 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:16:26.070  INFO 5691 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-01 18:17:20.352  INFO 5691 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:17:20.374  INFO 5691 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:17:20.376  INFO 5691 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:17:20.379  INFO 5691 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:17:20.388  INFO 5691 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:17:35.065  INFO 5785 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5785 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:17:35.068  INFO 5785 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:17:35.929  INFO 5785 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:17:35.965  INFO 5785 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:17:36.397  INFO 5785 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:17:36.405  INFO 5785 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:17:36.406  INFO 5785 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:17:36.487  INFO 5785 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:17:36.487  INFO 5785 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1378 ms
+2021-02-01 18:17:36.744  INFO 5785 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:17:36.759  INFO 5785 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:17:36.773  INFO 5785 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:17:36.773  INFO 5785 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:17:36.895  INFO 5785 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:17:37.093  INFO 5785 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:17:37.097  WARN 5785 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:17:37.283  INFO 5785 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:17:37.285  INFO 5785 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:17:37.290  INFO 5785 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:17:39.650  INFO 5785 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - ca31e3ac-5cfa-460f-a1b9-9400a7802223 this
+]
+
+2021-02-01 18:17:39.665  INFO 5785 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:17:39.772  INFO 5785 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:17:40.139  INFO 5785 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:17:40.177  INFO 5785 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:17:40.219  INFO 5785 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:17:40.456  INFO 5785 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:17:40.547  INFO 5785 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:17:40.945  INFO 5785 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:17:40.952  INFO 5785 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:17:41.309  WARN 5785 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:17:41.491  INFO 5785 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:17:41.587  INFO 5785 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:17:41.766  INFO 5785 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1fe88a71-3437-4979-80c1-11b260837399
+
+2021-02-01 18:17:41.867  INFO 5785 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3751baf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@702432cc, org.springframework.security.web.csrf.CsrfFilter@5af1b221, org.springframework.security.web.authentication.logout.LogoutFilter@744199bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6672b0ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6413eeb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27e656e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@543c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca7bddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21539796, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cfab56d, org.springframework.security.web.session.SessionManagementFilter@355b4c34, org.springframework.security.web.access.ExceptionTranslationFilter@6dc7b7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+2021-02-01 18:17:41.949  INFO 5785 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:17:42.245  INFO 5785 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.495 seconds (JVM running for 7.945)
+2021-02-01 18:17:43.347  INFO 5785 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:17:43.348  INFO 5785 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:17:43.349  INFO 5785 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-01 18:18:47.883  INFO 5785 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:18:47.902  INFO 5785 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:18:47.904  INFO 5785 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:18:47.906  INFO 5785 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:18:47.916  INFO 5785 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:19:07.181  INFO 5795 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5795 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:19:07.183  INFO 5795 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:19:08.028  INFO 5795 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:19:08.064  INFO 5795 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:19:08.494  INFO 5795 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:19:08.503  INFO 5795 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:19:08.503  INFO 5795 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:19:08.584  INFO 5795 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:19:08.584  INFO 5795 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1367 ms
+2021-02-01 18:19:08.841  INFO 5795 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:19:08.855  INFO 5795 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:19:08.868  INFO 5795 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:19:08.869  INFO 5795 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:19:08.989  INFO 5795 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:19:09.184  INFO 5795 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:19:09.188  WARN 5795 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:19:09.362  INFO 5795 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:19:09.364  INFO 5795 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:19:09.368  INFO 5795 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:19:12.223  INFO 5795 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - a268aebf-d1ce-4a97-a63f-271cc43a7c70 this
+]
+
+2021-02-01 18:19:12.238  INFO 5795 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:19:12.343  INFO 5795 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:19:12.705  INFO 5795 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:19:12.747  INFO 5795 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:19:12.815  INFO 5795 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:19:13.050  INFO 5795 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:19:13.143  INFO 5795 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:19:13.560  INFO 5795 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:19:13.568  INFO 5795 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:19:13.950  WARN 5795 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:19:14.135  INFO 5795 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:19:14.230  INFO 5795 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:19:14.411  INFO 5795 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 96908dbf-b951-440b-ab20-2e798b4bccfa
+
+2021-02-01 18:19:14.515  INFO 5795 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@543c887, org.springframework.security.web.context.SecurityContextPersistenceFilter@355b4c34, org.springframework.security.web.header.HeaderWriterFilter@6dc7b7f, org.springframework.security.web.csrf.CsrfFilter@17554316, org.springframework.security.web.authentication.logout.LogoutFilter@49482761, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18d09283, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@744199bb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@75f446df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e4b9592, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dc3eda6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32eb38e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3751baf6, org.springframework.security.web.session.SessionManagementFilter@702432cc, org.springframework.security.web.access.ExceptionTranslationFilter@7a79d99c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fb42ec7]
+2021-02-01 18:19:14.597  INFO 5795 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:19:14.883  INFO 5795 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 8.007 seconds (JVM running for 8.618)
+2021-02-01 18:19:16.755  INFO 5795 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:19:16.755  INFO 5795 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:19:16.757  INFO 5795 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:19:52.018  INFO 5795 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:19:52.040  INFO 5795 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:19:52.042  INFO 5795 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:19:52.044  INFO 5795 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:19:52.052  INFO 5795 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:20:10.557  INFO 5796 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5796 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:20:10.559  INFO 5796 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:20:11.404  INFO 5796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:20:11.451  INFO 5796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:20:11.872  INFO 5796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:20:11.882  INFO 5796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:20:11.883  INFO 5796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:20:11.977  INFO 5796 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:20:11.977  INFO 5796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1381 ms
+2021-02-01 18:20:12.236  INFO 5796 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:20:12.250  INFO 5796 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:20:12.263  INFO 5796 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:20:12.263  INFO 5796 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:20:12.383  INFO 5796 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:20:12.578  INFO 5796 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:20:12.582  WARN 5796 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:20:12.757  INFO 5796 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:20:12.759  INFO 5796 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:20:12.763  INFO 5796 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:20:15.203  INFO 5796 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 18cba1ec-496d-4e34-9ccb-5737ea4dca96 this
+]
+
+2021-02-01 18:20:15.218  INFO 5796 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:20:15.331  INFO 5796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:20:15.693  INFO 5796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:20:15.737  INFO 5796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:20:15.779  INFO 5796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:20:16.073  INFO 5796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:20:16.166  INFO 5796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:20:16.585  INFO 5796 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:20:16.593  INFO 5796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:20:16.959  WARN 5796 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:20:17.142  INFO 5796 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:20:17.247  INFO 5796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:20:17.430  INFO 5796 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cc2df91d-68e0-40c1-95ea-66d9e063fc57
+
+2021-02-01 18:20:17.534  INFO 5796 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3751baf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@702432cc, org.springframework.security.web.csrf.CsrfFilter@5af1b221, org.springframework.security.web.authentication.logout.LogoutFilter@744199bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6672b0ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6413eeb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27e656e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@543c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca7bddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21539796, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cfab56d, org.springframework.security.web.session.SessionManagementFilter@355b4c34, org.springframework.security.web.access.ExceptionTranslationFilter@6dc7b7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+2021-02-01 18:20:17.611  INFO 5796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:20:17.903  INFO 5796 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.658 seconds (JVM running for 8.107)
+2021-02-01 18:20:18.987  INFO 5796 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:20:18.987  INFO 5796 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:20:18.989  INFO 5796 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:23:07.038  INFO 5796 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:23:07.063  INFO 5796 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:23:07.065  INFO 5796 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:23:07.068  INFO 5796 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:23:07.078  INFO 5796 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:23:20.226  INFO 5833 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5833 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:23:20.229  INFO 5833 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:23:21.083  INFO 5833 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:23:21.119  INFO 5833 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:23:21.560  INFO 5833 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:23:21.568  INFO 5833 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:23:21.568  INFO 5833 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:23:21.643  INFO 5833 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:23:21.644  INFO 5833 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1376 ms
+2021-02-01 18:23:21.900  INFO 5833 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:23:21.914  INFO 5833 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:23:21.927  INFO 5833 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:23:21.927  INFO 5833 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:23:22.046  INFO 5833 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:23:22.243  INFO 5833 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:23:22.248  WARN 5833 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:23:22.419  INFO 5833 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:23:22.422  INFO 5833 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:23:22.426  INFO 5833 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:23:25.212  INFO 5833 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - 107426b2-ee11-43a1-b3d0-0edf9baf7a7f this
+]
+
+2021-02-01 18:23:25.227  INFO 5833 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:23:25.332  INFO 5833 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:23:25.688  INFO 5833 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:23:25.729  INFO 5833 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:23:25.788  INFO 5833 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:23:26.021  INFO 5833 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:23:26.115  INFO 5833 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:23:26.531  INFO 5833 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:23:26.538  INFO 5833 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:23:26.899  WARN 5833 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:23:27.086  INFO 5833 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:23:27.186  INFO 5833 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:23:27.365  INFO 5833 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8e8cd6e5-da31-40fa-917c-b167cadc9f58
+
+2021-02-01 18:23:27.470  INFO 5833 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75f446df, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ca006ac, org.springframework.security.web.header.HeaderWriterFilter@4425b6ed, org.springframework.security.web.csrf.CsrfFilter@518b0c12, org.springframework.security.web.authentication.logout.LogoutFilter@6ac0fd1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@751b901a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ce8bf64, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3751baf6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@438a65a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1372696b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73633230, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27e656e6, org.springframework.security.web.session.SessionManagementFilter@5039c2cf, org.springframework.security.web.access.ExceptionTranslationFilter@1f27f354, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f7b1d6a]
+2021-02-01 18:23:27.549  INFO 5833 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:23:27.835  INFO 5833 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.908 seconds (JVM running for 8.546)
+2021-02-01 18:23:29.626  INFO 5833 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:23:29.626  INFO 5833 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:23:29.628  INFO 5833 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-01 18:24:09.053  INFO 5833 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:24:09.075  INFO 5833 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:24:09.078  INFO 5833 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:24:09.079  INFO 5833 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:24:09.089  INFO 5833 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-01 18:24:29.225  INFO 5837 --- [main] c.p.s.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 1.8.0_261 on Ablahs-MacBook-Pro.local with PID 5837 (/Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi/target/classes started by pradeep in /Users/pradeep/Documents/workspace-spring-tool-suite-4-4.8.1.RELEASE/productrestapi)
+2021-02-01 18:24:29.230  INFO 5837 --- [main] c.p.s.ProductrestapiApplication          : No active profile set, falling back to default profiles: default
+2021-02-01 18:24:30.079  INFO 5837 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 18:24:30.115  INFO 5837 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-02-01 18:24:30.546  INFO 5837 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 18:24:30.554  INFO 5837 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 18:24:30.555  INFO 5837 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 18:24:30.633  INFO 5837 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2021-02-01 18:24:30.633  INFO 5837 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1363 ms
+2021-02-01 18:24:30.888  INFO 5837 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-02-01 18:24:30.903  INFO 5837 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [4.0.3] Picked [172.27.194.165]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-02-01 18:24:30.915  INFO 5837 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Hazelcast 4.0.3 (20200921 - 59ae831) starting at [172.27.194.165]:5701
+2021-02-01 18:24:30.915  INFO 5837 --- [main] com.hazelcast.system                     : [172.27.194.165]:5701 [dev] [4.0.3] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2021-02-01 18:24:31.029  INFO 5837 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [172.27.194.165]:5701 [dev] [4.0.3] Backpressure is disabled
+2021-02-01 18:24:31.220  INFO 5837 --- [main] com.hazelcast.instance.impl.Node         : [172.27.194.165]:5701 [dev] [4.0.3] Creating MulticastJoiner
+2021-02-01 18:24:31.224  WARN 5837 --- [main] com.hazelcast.cp.CPSubsystem             : [172.27.194.165]:5701 [dev] [4.0.3] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 18:24:31.391  INFO 5837 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [172.27.194.165]:5701 [dev] [4.0.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2021-02-01 18:24:31.393  INFO 5837 --- [main] c.h.internal.diagnostics.Diagnostics     : [172.27.194.165]:5701 [dev] [4.0.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 18:24:31.398  INFO 5837 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTING
+2021-02-01 18:24:33.765  INFO 5837 --- [main] c.h.internal.cluster.ClusterService      : [172.27.194.165]:5701 [dev] [4.0.3] 
+
+Members {size:1, ver:1} [
+	Member [172.27.194.165]:5701 - c1c4fa66-fa54-4fed-abe1-5c582c25fb8b this
+]
+
+2021-02-01 18:24:33.780  INFO 5837 --- [main] com.hazelcast.core.LifecycleService      : [172.27.194.165]:5701 [dev] [4.0.3] [172.27.194.165]:5701 is STARTED
+2021-02-01 18:24:33.904  INFO 5837 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-01 18:24:34.260  INFO 5837 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-01 18:24:34.307  INFO 5837 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-01 18:24:34.367  INFO 5837 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-01 18:24:34.586  INFO 5837 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-01 18:24:34.678  INFO 5837 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-01 18:24:35.107  INFO 5837 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-01 18:24:35.115  INFO 5837 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:24:35.440  WARN 5837 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-01 18:24:35.632  INFO 5837 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-02-01 18:24:35.693  INFO 5837 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-01 18:24:35.759  INFO 5837 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:24:35.942  INFO 5837 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8a7eb956-bf19-4620-b724-f5beec4baa58
+
+2021-02-01 18:24:36.055  INFO 5837 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70b0dc92, org.springframework.security.web.context.SecurityContextPersistenceFilter@532e00bd, org.springframework.security.web.header.HeaderWriterFilter@47d7e4b6, org.springframework.security.web.csrf.CsrfFilter@702432cc, org.springframework.security.web.authentication.logout.LogoutFilter@6046fba0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73c1dda3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@54cce500, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@309d54ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@70680f88, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47fbf95e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6413eeb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@390978, org.springframework.security.web.session.SessionManagementFilter@49e92724, org.springframework.security.web.access.ExceptionTranslationFilter@6c68f29c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3751baf6]
+2021-02-01 18:24:36.137  INFO 5837 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2021-02-01 18:24:36.137  INFO 5837 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-02-01 18:24:36.162  INFO 5837 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-02-01 18:24:36.200  INFO 5837 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-02-01 18:24:36.336  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-02-01 18:24:36.338  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-02-01 18:24:36.339  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-02-01 18:24:36.340  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-02-01 18:24:36.341  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-02-01 18:24:36.342  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-02-01 18:24:36.344  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-02-01 18:24:36.345  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-02-01 18:24:36.347  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-02-01 18:24:36.348  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-02-01 18:24:36.350  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-02-01 18:24:36.351  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-02-01 18:24:36.352  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-02-01 18:24:36.354  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-02-01 18:24:36.355  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-02-01 18:24:36.355  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-02-01 18:24:36.356  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-02-01 18:24:36.357  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-02-01 18:24:36.358  INFO 5837 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-02-01 18:24:36.387  INFO 5837 --- [main] c.p.s.ProductrestapiApplication          : Started ProductrestapiApplication in 7.499 seconds (JVM running for 7.97)
+2021-02-01 18:24:38.054  INFO 5837 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 18:24:38.054  INFO 5837 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-01 18:24:38.055  INFO 5837 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-01 18:30:54.885  INFO 5837 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-01 18:30:54.907  INFO 5837 --- [RMI TCP Connection(17)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-01 18:30:54.909  INFO 5837 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-01 18:30:54.911  INFO 5837 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-01 18:30:54.923  INFO 5837 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
